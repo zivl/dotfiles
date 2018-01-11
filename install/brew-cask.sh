@@ -7,40 +7,30 @@ brew tap caskroom/versions
 
 # Install packages
 apps=(
-    1password
-    gyazo
+    visual-studio-code
+    sublime-text
     dropbox
-    google-drive
     spectacle
-    flux
-    dash
-    imagealpha
-    imageoptim
-    evernote
-    iterm2
-    atom
     webstorm
     firefox
-    firefoxnightly
     google-chrome
-    google-chrome-canary
-    malwarebytes-anti-malware
-    glimmerblocker
-    hammerspoon
-    kaleidoscope
-    macdown
-    opera
-    screenflow
-    spotify
+#   macdown - markdown editor
+#    screenflow - screen editing and recording software
     skype
     slack
-    tower
-    transmit
-    elmedia-player
-    utorrent
+    charles
+    iterm2
 )
 
-brew cask install "${apps[@]}"
+for app in "${apps[@]}"
+do
+    brew cask list "$app" || brew cask install  "$app"
+
+done
+
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+echo "\nInstalling Quick Look Plugins\n"
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
+
+exit 0

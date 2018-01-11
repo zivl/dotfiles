@@ -18,7 +18,7 @@ then
   echo "Installing a stable version of Node..."
 
   # Install the latest stable version of node
-  nvm install stable
+  nvm install node
 
   # Switch to the installed version
   nvm use node
@@ -39,19 +39,10 @@ npm config set save-exact = true
 # git-recent — Type `git recent` to see your recent local git branches
 # git-open — Type `git open` to open the GitHub page or website for a repository
 packages=(
-    diff-so-fancy
-    git-recent
-    git-open
-    gulp
+    chrome-driver
     http-server
     servedir
-    flow-bin
-    flow-typed
     npm-check-updates
-    webpack
-    nodemon
-    svgo
-    yo
 )
 
 npm install -g "${packages[@]}"
