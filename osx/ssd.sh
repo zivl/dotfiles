@@ -6,8 +6,8 @@
 # Ask for the administrator password upfront
 sudo -v
 
-# Turn off local Time Machine snapshots [laptops only]
-sudo tmutil disablelocal
+# Turn off local Time Machine snapshots [laptops only] TODO: it is not working in high-sierra
+# sudo tmutil disablelocal
 
 # Turn off hibernation [laptops only]
 sudo pmset -a hibernatemode 0

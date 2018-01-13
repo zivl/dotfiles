@@ -8,9 +8,9 @@
 #
 
 # Set computer name
-COMPUTERNAME="Nick Plekhanov's MBP"
-HOSTNAME='mbp'
-LOCALHOSTNAME='mbp'
+COMPUTERNAME="zivl-mbp13"
+HOSTNAME='zivl-mbp13'
+LOCALHOSTNAME='zivl-mbp13'
 
 # Ask for the administrator password upfront
 sudo -v
@@ -55,9 +55,6 @@ defaults write com.apple.Safari HomePage -string "about:blank"
 # Use AirDrop over every interface.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
-# Check for software updates daily, not just once per week.
-defaults write com.assple.SoftwareUpdate ScheduleFrequency -int 1
-
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
@@ -71,11 +68,11 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Disable some menu bar icons: Time Machine, Volume and User
-for domain in ~/Library/Preferences/ByHost/com.apple.stytemuiserver.*; do
-  "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-  "/System/Library/CoreServices/Menu Extras/Volume.menu" \
-  "/System/Library/CoreServices/Menu Extras/User.menu"
-done
+#for domain in ~/Library/Preferences/ByHost/com.apple.stytemuiserver.*; do
+#  "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+#  "/System/Library/CoreServices/Menu Extras/Volume.menu" \
+#  "/System/Library/CoreServices/Menu Extras/User.menu"
+#done
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -98,23 +95,8 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 # Interfaces: trackpad, mouse, keyboard, bluetooth, etc.
 ###############################################################################
 
-# Map bottom right corner of Apple trackpad to right-click.
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write -g com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write com.apple.trackpad.enableSecondaryClick -bool true
-
-# Set a really fast keyboard repeat rate.
-defaults write -g KeyRepeat -int 0
-
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
-
-# Set language and text formats. (USD and Imperial Units)
-defaults write -g AppleLanguages -array "en" "nl"
-defaults write -g AppleLocale -string "en_US@currency=USD"
-defaults write -g AppleMeasurementUnits -string "Inches"
-defaults write -g AppleMetricUnits -bool false
 
 ###############################################################################
 # Screen
@@ -155,7 +137,7 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES; killall Dock
 # Disable icons on the Desktop
 # This will "hide" all the files on the Desktop, but one can still access
 # the files through Finder. Makes things look pretty.
-defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+#defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 
 ###############################################################################
 # Finder
@@ -173,7 +155,7 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show hidden files and file extensions by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Disable the warning when changing file extensions
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
@@ -187,9 +169,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Enable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
 
-# Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
-
 # Expand print panel by default
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
@@ -202,12 +181,6 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 # Disable the crash reporter
 defaults write com.apple.CrashReporter DialogType -string "none"
 
-###############################################################################
-# SSD
-###############################################################################
-
-# Disable the sudden motion sensor as it’s not useful for SSDs
-sudo pmset -a sms 0
 
 ###############################################################################
 # Dock
@@ -216,14 +189,8 @@ sudo pmset -a sms 0
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
 
-# Add several spacers
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-
 # Automatically hide and show the Dock
-# defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool true
 
 ###############################################################################
 # Do some clean up work.
