@@ -1,9 +1,13 @@
-# Git mergetool
+
+[user]
+	name = Ziv Levy
+	email = levi.ziv@gmail.com
 [core]
 
 [pull]
-        rebase = true
+	rebase = true
 
+# Git mergetool
 [merge]
         tool = bc3
 
