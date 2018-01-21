@@ -12,6 +12,7 @@ apps=(
     dropbox
     spectacle
     webstorm
+    intellij-idea
     firefox
     google-chrome
 #   macdown - markdown editor
@@ -20,6 +21,9 @@ apps=(
     slack
     charles
     iterm2
+    vnc-viewer
+    vlc,
+    beyond-compare
 )
 
 for app in "${apps[@]}"

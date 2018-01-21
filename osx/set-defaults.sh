@@ -181,6 +181,8 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 # Disable the crash reporter
 defaults write com.apple.CrashReporter DialogType -string "none"
 
+# Disable animation when opening the Info window in Finder (cmd⌘ + i).
+defaults write com.apple.finder DisableAllAnimations -bool true
 
 ###############################################################################
 # Dock
@@ -191,6 +193,18 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
+
+
+
+###############################################################################
+# Mail App
+###############################################################################
+
+# Disable the animation when you sending and replying an e-mail
+defaults write com.apple.mail DisableReplyAnimations -bool true
+defaults write com.apple.mail DisableSendAnimations -bool true
+
+
 
 ###############################################################################
 # Do some clean up work.

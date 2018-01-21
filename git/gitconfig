@@ -1,11 +1,9 @@
-
-[user]
-	name = Ziv Levy
-	email = levi.ziv@gmail.com
-[core]
-
 [pull]
-	rebase = true
+        rebase = true
+[user]
+	      name = Ziv Levy
+	      email = levi.ziv@gmail.com
+
 
 # Git mergetool
 [merge]

@@ -41,6 +41,7 @@ apps=(
     tree
     wget
     wifi-password
+    jq
 )
 
 brew install "${apps[@]}"
