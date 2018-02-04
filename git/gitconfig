@@ -4,16 +4,20 @@
 	      name = Ziv Levy
 	      email = levi.ziv@gmail.com
 
+[branch]
+	autosetuprebase = always
 
 # Git mergetool
 [merge]
         tool = bc3
 
-
+[rebase]
+	autoStash = true
 
 # A good list of alises http://haacked.com/archive/2014/07/28/github-flow-aliases/
 [alias]
-
+	remaster = rebase origin/master
+  sync-fork = fetch upstream && git checkout master && merge upstream/master
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # So much color
@@ -78,4 +82,3 @@
 
 [url "git://gist.github.com/"]
         insteadOf = "gist:"
-
