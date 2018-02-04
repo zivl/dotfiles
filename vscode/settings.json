@@ -13,7 +13,6 @@
     "files.autoSave": "onFocusChange",
     "editor.fontSize": 14,
     "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
     "prettier.eslintIntegration": true,
     "prettier.printWidth": 100,
     "prettier.semi": false,
@@ -21,7 +20,33 @@
     "workbench.startupEditor": "none",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "cSpell.userWords": [
-        "fedops"
+        "Backend",
+        "consts",
+        "fedops",
+        "testkit"
     ],
-    "cSpell.language": "en"
+    "cSpell.language": "en",
+    "search.exclude": {
+        "dist": true,
+        "coverage": true,
+        "target": true,
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "eslint.autoFixOnSave": true,
+    "git-autoconfig.configList": [
+        {
+            "user.email": "levi.ziv@gmail.com",
+            "user.name": "Ziv Levy"
+        },
+        {
+            "user.email": "zivl@wix.com",
+            "user.name": "Ziv Levy"
+        }
+    ],
+    "git.autofetch": true,
+    "git.enableSmartCommit": true
 }

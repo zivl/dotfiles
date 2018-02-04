@@ -26,7 +26,9 @@ $extensions =
     "robinbentley.sass-indented",
     "cssho.vscode-svgviewer",
     "wayou.vscode-todo-highlight",
-    "WallabyJs.wallaby-vscode"
+    "WallabyJs.wallaby-vscode",
+    "xabikos.reactsnippets",
+    "shyykoserhiy.git-autoconfig"
 
 $cmd = "code --list-extensions"
 Invoke-Expression $cmd -OutVariable output | Out-Null
