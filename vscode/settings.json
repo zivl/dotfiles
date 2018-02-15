@@ -11,7 +11,7 @@
         "suppressWelcomeNotice": true
     },
     "files.autoSave": "onFocusChange",
-    "editor.fontSize": 14,
+    "editor.fontSize": 17,
     "editor.formatOnType": true,
     "prettier.eslintIntegration": true,
     "prettier.printWidth": 100,
@@ -48,5 +48,7 @@
         }
     ],
     "git.autofetch": true,
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "workbench.sideBar.location": "left",
+    "editor.fontFamily": "'Ubuntu Mono derivative Powerline', Menlo, Monaco, 'Courier New', monospace"
 }
