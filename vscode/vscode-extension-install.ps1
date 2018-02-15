@@ -27,6 +27,7 @@ $extensions =
     "cssho.vscode-svgviewer",
     "wayou.vscode-todo-highlight",
     "WallabyJs.wallaby-vscode",
+    "WallabyJs.quokka-vscode",
     "xabikos.reactsnippets",
     "shyykoserhiy.git-autoconfig"
 
