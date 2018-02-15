@@ -42,6 +42,7 @@ apps=(
     wget
     wifi-password
     jq
+    watchman
 )
 
 brew install "${apps[@]}"
