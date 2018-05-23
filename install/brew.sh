@@ -43,6 +43,7 @@ apps=(
     wifi-password
     jq
     watchman
+    cocoapods
 )
 
 brew install "${apps[@]}"
