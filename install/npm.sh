@@ -39,10 +39,9 @@ npm config set save-exact = true
 # git-recent — Type `git recent` to see your recent local git branches
 # git-open — Type `git open` to open the GitHub page or website for a repository
 packages=(
-    chrome-driver
-    http-server
     servedir
     npm-check-updates
+    grunt-cli
 )
 
 npm install -g "${packages[@]}"
