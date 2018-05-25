@@ -12,9 +12,8 @@ then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-brew tap homebrew/versions
-brew tap homebrew/dupes
-brew tap Goles/battery
+# Add another homebrew resource
+brew tap homebrew/core
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -23,13 +22,6 @@ brew update
 brew upgrade --all
 
 # Install the Homebrew packages I use on a day-to-day basis.
-#
-# - Languages: nvm (Node.js)
-# - Tree (http://mama.indstate.edu/users/ice/tree/): A directory listing utility
-#   that produces a depth indented listing of files.
-# - git-extras (https://vimeo.com/45506445): Adds a shit ton of useful commands #   to git.
-
-
 apps=(
     nvm
     maven
@@ -38,7 +30,6 @@ apps=(
     homebrew/completions/brew-cask-completion
     python
     source-highlight
-    tree
     wget
     wifi-password
     jq
