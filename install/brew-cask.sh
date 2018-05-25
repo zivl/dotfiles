@@ -15,7 +15,7 @@ apps=(
     intellij-idea
     firefox
     google-chrome
-#   macdown - markdown editor
+#    macdown - markdown editor
 #    screenflow - screen editing and recording software
     skype
     slack
@@ -28,7 +28,7 @@ apps=(
 
 for app in "${apps[@]}"
 do
-    brew cask list "$app" || brew cask install  "$app"
+    brew cask list "$app" || brew cask install "$app"
 
 done
 
