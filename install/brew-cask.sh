@@ -7,6 +7,7 @@ brew tap caskroom/versions
 
 # Install packages
 apps=(
+    java
     visual-studio-code
     sublime-text
     dropbox
@@ -22,8 +23,9 @@ apps=(
     charles
     iterm2
     vnc-viewer
-    vlc,
+    vlc
     beyond-compare
+    powershell
 )
 
 for app in "${apps[@]}"
