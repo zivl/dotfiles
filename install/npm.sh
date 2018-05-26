@@ -13,31 +13,29 @@
 #     ./node_modules/.bin/webpack --config webpack.local.config.js
 #
 
+. /usr/local/opt/nvm/nvm.sh
+
+version=8.7
+
 if test ! $(which nvm)
 then
-  echo "Installing a stable version of Node..."
+  echo "Installing NodeJS version " $version
 
   # Install the latest stable version of node
-  nvm install node
+  nvm install $version
 
   # Switch to the installed version
-  nvm use node
+  nvm use $version
 
   # Use the stable version of node by default
-  nvm alias default node
+  nvm alias default $version
 fi
 
 # All `npm install <pkg>` commands will pin to the version that was available at the time you run the command
-npm config set save-exact = true
+# npm config set save-exact = true
 
 # Globally install with npm
 # To list globally installed npm packages and version: npm list -g --depth=0
-#
-# Some descriptions:
-#
-# diff-so-fancy — sexy git diffs
-# git-recent — Type `git recent` to see your recent local git branches
-# git-open — Type `git open` to open the GitHub page or website for a repository
 packages=(
     servedir
     npm-check-updates
