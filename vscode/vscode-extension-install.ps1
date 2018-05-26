@@ -5,7 +5,7 @@ $extensions =
     "steoates.autoimport",
     "formulahendry.auto-rename-tag",
     "formulahendry.auto-close-tag",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
     "vangware.dark-plus-material",
     "joelday.docthis",
     "dracula-theme.theme-dracula",
@@ -29,7 +29,9 @@ $extensions =
     "WallabyJs.wallaby-vscode",
     "WallabyJs.quokka-vscode",
     "xabikos.reactsnippets",
-    "shyykoserhiy.git-autoconfig"
+    "shyykoserhiy.git-autoconfig",
+    "zhouronghui.propertylist",
+    "ms-vscode.powershell"
 
 $cmd = "code --list-extensions"
 Invoke-Expression $cmd -OutVariable output | Out-Null
@@ -37,9 +39,9 @@ $installed = $output -split "\s"
 
 foreach ($ext in $extensions) {
     if ($installed.Contains($ext)) {
-        Write-Host $ext "already installed." -ForegroundColor Gray
+        Write-Host $ext "already installed."
     } else {
-        Write-Host "Installing" $ext "..." -ForegroundColor White
+        Write-Host "Installing" $ext "..."
         code --install-extension $ext
     }
 }
