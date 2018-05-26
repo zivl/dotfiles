@@ -19,7 +19,7 @@ brew tap homebrew/core
 brew update
 
 # Upgrade any already-installed formulae
-brew upgrade --all
+brew upgrade
 
 # Install the Homebrew packages I use on a day-to-day basis.
 apps=(
@@ -41,3 +41,6 @@ brew install "${apps[@]}"
 
 # Remove outdated versions from the cellar
 brew cleanup
+
+# opt-out brew analytics
+brew analytics off
