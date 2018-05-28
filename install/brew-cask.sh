@@ -26,6 +26,7 @@ apps=(
     vlc
     beyond-compare
     powershell
+    whatsapp
 )
 
 for app in "${apps[@]}"
