@@ -31,7 +31,8 @@ $extensions =
     "xabikos.reactsnippets",
     "shyykoserhiy.git-autoconfig",
     "zhouronghui.propertylist",
-    "ms-vscode.powershell"
+    "ms-vscode.powershell",
+    "EQuimper.react-native-react-redux"
 
 $cmd = "code --list-extensions"
 Invoke-Expression $cmd -OutVariable output | Out-Null
