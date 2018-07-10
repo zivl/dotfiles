@@ -32,7 +32,8 @@ $extensions =
     "shyykoserhiy.git-autoconfig",
     "zhouronghui.propertylist",
     "ms-vscode.powershell",
-    "EQuimper.react-native-react-redux"
+    "EQuimper.react-native-react-redux",
+    "ms-vsliveshare.vsliveshare"
 
 $cmd = "code --list-extensions"
 Invoke-Expression $cmd -OutVariable output | Out-Null
