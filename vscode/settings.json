@@ -23,6 +23,7 @@
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "cSpell.userWords": [
         "Backend",
+        "Truthy",
         "consts",
         "databinding",
         "dataset",
@@ -33,6 +34,7 @@
         "fedops",
         "memberof",
         "testkit",
+        "uncomment",
         "unconfigured",
         "zivl"
     ],
@@ -43,7 +45,8 @@
         "**/target": true,
         "**/node_modules": true,
         "**/bower_components": true,
-        "**/*.rt.js": true
+        "**/*.rt.js": true,
+        "**/messages_*.json": true
     },
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
