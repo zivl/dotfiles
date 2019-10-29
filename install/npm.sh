@@ -15,7 +15,7 @@
 
 . /usr/local/opt/nvm/nvm.sh
 
-version=8.7
+version=12
 
 if test ! $(which nvm)
 then
@@ -39,7 +39,6 @@ fi
 packages=(
     servedir
     npm-check-updates
-    grunt-cli
 )
 
 npm install -g "${packages[@]}"
