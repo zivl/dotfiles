@@ -27,6 +27,7 @@ apps=(
     beyond-compare
     powershell
     whatsapp
+    docker
 )
 
 for app in "${apps[@]}"
