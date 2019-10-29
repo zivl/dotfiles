@@ -38,7 +38,7 @@ apps=(
 )
 
 brew install "${apps[@]}"
-brew install yarn --without-node
+# brew install yarn --without-node
 
 # Remove outdated versions from the cellar
 brew cleanup
