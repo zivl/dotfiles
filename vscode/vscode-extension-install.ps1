@@ -33,7 +33,9 @@ $extensions =
     "zhouronghui.propertylist",
     "ms-vscode.powershell",
     "EQuimper.react-native-react-redux",
-    "ms-vsliveshare.vsliveshare"
+    "ms-vsliveshare.vsliveshare",
+    "stkb.rewrap",
+    "mikestead.dotenv"
 
 $cmd = "code --list-extensions"
 Invoke-Expression $cmd -OutVariable output | Out-Null
