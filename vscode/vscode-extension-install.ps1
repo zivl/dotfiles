@@ -35,7 +35,8 @@ $extensions =
     "EQuimper.react-native-react-redux",
     "ms-vsliveshare.vsliveshare",
     "stkb.rewrap",
-    "mikestead.dotenv"
+    "mikestead.dotenv",
+    "kamikillerto.vscode-colorize"
 
 $cmd = "code --list-extensions"
 Invoke-Expression $cmd -OutVariable output | Out-Null
