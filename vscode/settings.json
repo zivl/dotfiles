@@ -64,7 +64,6 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "eslint.autoFixOnSave": true,
     "git-autoconfig.configList": [
         {
             "user.email": "levi.ziv@gmail.com",
@@ -84,9 +83,8 @@
     "terminal.integrated.fontSize": 18,
     "material-icon-theme.showUpdateMessage": false,
     "gitlens.historyExplorer.enabled": true,
-    "eslint.nodePath": "./node_modules/eslint-config-experts",
-    "workbench.colorTheme": "Visual Studio Dark",
-    "wallaby.node": "/Users/zivl/.nvm/versions/node/v10.14.1/bin/node",
+    "eslint.nodePath": "<root>/eslint-config-experts",
+    "wallaby.node": "/Users/zivl/.nvm/versions/node/v12.13.1/bin/node",
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     "breadcrumbs.enabled": false,
@@ -102,5 +100,50 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "wallaby.startAutomatically": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "keyboard.touchbar.enabled": false,
+    "colorize.languages": [
+        "javascript",
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg"
+    ],
+    "colorInfo.languages": [
+        {
+            "selector": "javascript",
+            "colors": "css"
+        },
+        {
+            "selector": "css",
+            "colors": "css"
+        },
+        {
+            "selector": "sass",
+            "colors": "css"
+        },
+        {
+            "selector": "scss",
+            "colors": "css"
+        },
+        {
+            "selector": "less",
+            "colors": "css"
+        }
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }
