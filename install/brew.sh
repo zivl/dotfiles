@@ -27,7 +27,7 @@ apps=(
     maven
     git
     git-extras
-    homebrew/completions/brew-cask-completion
+    brew-cask-completion
     python
     source-highlight
     wget
