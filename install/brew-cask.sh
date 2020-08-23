@@ -12,13 +12,13 @@ apps=(
     sublime-text
     dropbox
     spectacle
-    webstorm
+#    webstorm
     intellij-idea
     firefox
     google-chrome
 #    macdown - markdown editor
 #    screenflow - screen editing and recording software
-    skype
+#    skype
     slack
     charles
     iterm2
@@ -28,6 +28,8 @@ apps=(
     powershell
     whatsapp
     docker
+    spotify
+    zoomus
 )
 
 for app in "${apps[@]}"
