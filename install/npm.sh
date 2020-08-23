@@ -39,6 +39,10 @@ fi
 packages=(
     servedir
     npm-check-updates
+    expo-cli
+    md-to-pdf
+    node-sass
+    renamer
 )
 
 npm install -g "${packages[@]}"
