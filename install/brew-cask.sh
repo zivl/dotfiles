@@ -10,10 +10,10 @@ apps=(
     java
     visual-studio-code
     sublime-text
-    dropbox
-    spectacle
+#    dropbox
+#    spectacle
 #    webstorm
-    intellij-idea
+#    intellij-idea
     firefox
     google-chrome
 #    macdown - markdown editor
@@ -27,7 +27,7 @@ apps=(
     beyond-compare
     powershell
     whatsapp
-    docker
+#    docker
     spotify
     zoomus
 )
