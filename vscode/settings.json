@@ -1,5 +1,5 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-icons",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -13,9 +13,8 @@
         "suppressWelcomeNotice": true
     },
     "files.autoSave": "onFocusChange",
-    "editor.fontSize": 17,
+    "editor.fontSize": 18,
     "editor.formatOnType": true,
-    "prettier.eslintIntegration": true,
     "prettier.printWidth": 120,
     "prettier.semi": false,
     "prettier.singleQuote": true,
@@ -23,14 +22,6 @@
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "cSpell.userWords": [
         "Backend",
-        "Guid",
-        "Lightbox",
-        "Metasite",
-        "Optimus",
-        "Polyfill",
-        "Truthy",
-        "Unmount",
-        "Webapp",
         "consts",
         "databinding",
         "dataset",
@@ -40,14 +31,24 @@
         "elementory",
         "fedops",
         "grpc",
+        "Guid",
+        "Lightbox",
         "memberof",
+        "Metasite",
         "middlewares",
+        "Optimus",
+        "Overdues",
+        "Polyfill",
         "siteless",
         "testkit",
         "transpiled",
+        "Truthy",
         "uncomment",
         "unconfigured",
+        "Undeployment",
+        "Unmount",
         "upsert",
+        "Webapp",
         "youtube",
         "zivl"
     ],
@@ -76,17 +77,12 @@
     ],
     "git.autofetch": true,
     "git.enableSmartCommit": true,
-    "workbench.sideBar.location": "left",
     "editor.fontFamily": "'Ubuntu Mono derivative Powerline', Menlo, Monaco, 'Courier New', monospace",
-    "window.zoomLevel": 0,
     "gitlens.keymap": "none",
     "terminal.integrated.fontSize": 18,
     "material-icon-theme.showUpdateMessage": false,
-    "gitlens.historyExplorer.enabled": true,
-    "eslint.nodePath": "<root>/eslint-config-experts",
-    "wallaby.node": "/Users/zivl/.nvm/versions/node/v12.13.1/bin/node",
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
+    "eslint.nodePath": "<root>/.eslintrc.js",
+    "wallaby.node": "/Users/zivl/.nvm/versions/node/v14.16.0/bin/node",
     "breadcrumbs.enabled": false,
     "editor.minimap.enabled": true,
     "editor.renderControlCharacters": false,
@@ -106,7 +102,7 @@
         "source.fixAll.eslint": true
     },
     "eslint.alwaysShowStatus": true,
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "GitHub Dark Default",
     "diffEditor.ignoreTrimWhitespace": false,
     "keyboard.touchbar.enabled": false,
     "colorize.languages": [
@@ -145,5 +141,25 @@
     ],
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
+    "telemetry.enableTelemetry": false,
+    "autoimport.useSemiColon": false,
+    "npm-intellisense.importLinebreak": "",
+    "json.schemas": [
+        {
+            "name": "vscode-expo-manifest",
+            "url": "file:///Users/zivl/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-44.0.0.json",
+            "fileMatch": [
+                "app.json",
+                "app.config.json"
+            ]
+        }
+    ],
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "extensions.ignoreRecommendations": true,
+    "git.confirmSync": false
 }
