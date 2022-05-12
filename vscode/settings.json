@@ -82,7 +82,7 @@
     "terminal.integrated.fontSize": 18,
     "material-icon-theme.showUpdateMessage": false,
     "eslint.nodePath": "<root>/.eslintrc.js",
-    "wallaby.node": "/Users/zivl/.nvm/versions/node/v14.16.0/bin/node",
+    "wallaby.node": "/Users/zivl/.nvm/versions/node/v16.14.2/bin/node",
     "breadcrumbs.enabled": false,
     "editor.minimap.enabled": true,
     "editor.renderControlCharacters": false,
@@ -148,7 +148,7 @@
     "json.schemas": [
         {
             "name": "vscode-expo-manifest",
-            "url": "file:///Users/zivl/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-44.0.0.json",
+            "url": "file:///Users/zivl/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-45.0.0.json",
             "fileMatch": [
                 "app.json",
                 "app.config.json"
@@ -161,5 +161,7 @@
     },
     "vsicons.dontShowNewVersionMessage": true,
     "extensions.ignoreRecommendations": true,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.explorerKind": "external"
 }
