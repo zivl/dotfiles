@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Install Caskroom
-brew tap caskroom/cask
-brew install brew-cask
-brew tap caskroom/versions
+brew tap homebrew/cask
+brew install brew-cask-completion
+brew tap homebrew/cask-versions
 
 # Install packages
 apps=(
@@ -14,33 +14,33 @@ apps=(
 #    spectacle
 #    webstorm
 #    intellij-idea
-    firefox
-    google-chrome
+#    firefox
+#    google-chrome
 #    macdown - markdown editor
 #    screenflow - screen editing and recording software
 #    skype
-    slack
-    charles
+#    slack
+#    charles
     iterm2
-    vnc-viewer
+#    vnc-viewer
     vlc
     beyond-compare
     powershell
-    whatsapp
+#    whatsapp
 #    docker
-    spotify
-    zoomus
+#    spotify
+#    zoomus
 )
 
 for app in "${apps[@]}"
 do
-    brew cask list "$app" || brew cask install "$app"
+    brew list "$app" --cask || brew install "$app" --cask
 
 done
 
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 echo "\nInstalling Quick Look Plugins\n"
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package --cask
 
 exit 0
