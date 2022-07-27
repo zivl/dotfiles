@@ -48,6 +48,7 @@
         "Undeployment",
         "Unmount",
         "upsert",
+        "Validatable",
         "Webapp",
         "youtube",
         "zivl"
@@ -79,7 +80,7 @@
     "git.enableSmartCommit": true,
     "editor.fontFamily": "'Ubuntu Mono derivative Powerline', Menlo, Monaco, 'Courier New', monospace",
     "gitlens.keymap": "none",
-    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontSize": 20,
     "material-icon-theme.showUpdateMessage": false,
     "eslint.nodePath": "<root>/.eslintrc.js",
     "wallaby.node": "/Users/zivl/.nvm/versions/node/v16.14.2/bin/node",
