@@ -1,5 +1,7 @@
 [pull]
         rebase = true
+[push]
+        autoSetupRemove = true
 [user]
 	      name = Ziv Levy
 	      email = levi.ziv@gmail.com
