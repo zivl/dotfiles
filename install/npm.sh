@@ -15,7 +15,7 @@
 
 . /usr/local/opt/nvm/nvm.sh
 
-version=12
+version=16
 
 if test ! $(which nvm)
 then
@@ -43,6 +43,8 @@ packages=(
     md-to-pdf
     node-sass
     renamer
+    yarn
+    midgard-yarn
 )
 
 npm install -g "${packages[@]}"
