@@ -15,7 +15,7 @@
 
 . /usr/local/opt/nvm/nvm.sh
 
-version=16
+version=18
 
 if test ! $(which nvm)
 then
@@ -44,7 +44,6 @@ packages=(
     node-sass
     renamer
     yarn
-    midgard-yarn
 )
 
 npm install -g "${packages[@]}"
