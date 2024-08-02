@@ -22,6 +22,7 @@
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "cSpell.userWords": [
         "Backend",
+        "CICD",
         "consts",
         "databinding",
         "dataset",
@@ -47,6 +48,7 @@
         "unconfigured",
         "Undeployment",
         "Unmount",
+        "Unpublish",
         "upsert",
         "Validatable",
         "Webapp",
@@ -84,7 +86,6 @@
     "material-icon-theme.showUpdateMessage": false,
     "eslint.nodePath": "<root>/.eslintrc.js",
     "wallaby.node": "/Users/zivl/.nvm/versions/node/v16.14.2/bin/node",
-    "breadcrumbs.enabled": false,
     "editor.minimap.enabled": true,
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "none",
@@ -100,10 +101,10 @@
     },
     "wallaby.startAutomatically": false,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
     "eslint.alwaysShowStatus": true,
-    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.colorTheme": "Brogrammer Plus",
     "diffEditor.ignoreTrimWhitespace": false,
     "keyboard.touchbar.enabled": false,
     "colorize.languages": [
@@ -164,5 +165,22 @@
     "extensions.ignoreRecommendations": true,
     "git.confirmSync": false,
     "terminal.external.osxExec": "iTerm.app",
-    "terminal.explorerKind": "external"
+    "terminal.explorerKind": "external",
+    "npm.keybindingsChangedWarningShown": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "application.shellEnvironmentResolutionTimeout": 60,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
