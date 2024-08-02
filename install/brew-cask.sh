@@ -14,7 +14,7 @@ apps=(
 #    spectacle
 #    webstorm
 #    intellij-idea
-#    firefox
+   firefox
 #    google-chrome
 #    macdown - markdown editor
 #    screenflow - screen editing and recording software
