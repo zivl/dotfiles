@@ -13,8 +13,6 @@
 #     ./node_modules/.bin/webpack --config webpack.local.config.js
 #
 
-. /usr/local/opt/nvm/nvm.sh
-
 version=18
 
 if test ! $(which nvm)
