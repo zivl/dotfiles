@@ -104,7 +104,6 @@
         "source.fixAll.eslint": "explicit"
     },
     "eslint.alwaysShowStatus": true,
-    "workbench.colorTheme": "Brogrammer Plus",
     "diffEditor.ignoreTrimWhitespace": false,
     "keyboard.touchbar.enabled": false,
     "colorize.languages": [
@@ -182,5 +181,6 @@
         "scminput": false
     },
     "github.copilot.editor.enableAutoCompletions": true,
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "workbench.colorTheme": "Night Owl"
 }

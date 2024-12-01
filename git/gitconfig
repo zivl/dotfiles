@@ -2,6 +2,7 @@
         rebase = true
 [push]
         autoSetupRemove = true
+        autoSetupRemote = true
 [user]
 	      name = Ziv Levy
 	      email = levi.ziv@gmail.com
@@ -19,7 +20,9 @@
 # A good list of alises http://haacked.com/archive/2014/07/28/github-flow-aliases/
 [alias]
 	remaster = rebase origin/master
-  sync-fork = fetch upstream && git checkout master && merge upstream/master
+        sync-fork = fetch upstream && git checkout master && merge upstream/master
+        clear-numeric-branches = git branch --format='%(refname:short)' | grep -E '^[0-9]+$' | xargs -n 1 git branch -d
+        clear-numeric-branches-force = git branch --format='%(refname:short)' | grep -E '^[0-9]+$' | xargs -n 1 git branch -D
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # So much color
